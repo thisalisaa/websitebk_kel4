@@ -33,8 +33,8 @@
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo URL; ?>/categories">
-						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Categories
+					<a href="<?php echo URL; ?>/datasiswas">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Data Siswa
 					</a>
 				</li>
 				<li>

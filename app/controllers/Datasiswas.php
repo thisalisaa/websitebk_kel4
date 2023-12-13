@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Core\Controller;
 
-class Categories extends Controller
+class Datasiswas extends Controller
 {
      public object $model;
 
@@ -12,35 +12,40 @@ class Categories extends Controller
      {
           parent::cekLogin();
 
-          $this->model = new \App\Models\Category();
+          $this->model = new \App\Models\Datasiswa();
      }
 
      public function index()
      {
           $data['rows'] = $this->model->show();
-          $this->dashboard('categories/index', $data);
+          $this->dashboard('datasiswas/index', $data);
      }
 
      public function input()
      {
-          $this->dashboard('categories/input');
+          $this->dashboard('datasiswas/input');
      }
 
      public function save()
      {
           $this->model->save();
-          header('location:' . URL . '/categories');
+          header('location:' . URL . '/datasiswas');
      }
 
      public function edit($id)
      {
           $data['row'] = $this->model->edit($id);
-          $this->dashboard('categories/edit', $data);
+          $this->dashboard('datasiswas/edit', $data);
      }
 
      public function update()
      {
           $this->model->update();
-          header('location:' . URL . '/categories');
+          header('location:' . URL . '/datasiswas');
      }
+     public function delete($id)
+	{
+		$this->model->delete($id);
+		header('location:' . URL . '/datasiswas');
+	}
 }
