@@ -53,6 +53,11 @@
 					</a>
 				</li>
 				<li>
+					<a href="<?php echo URL; ?>/ayahs">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Ayah
+					</a>
+				</li>
+				<li>
 					<a href="<?php echo URL; ?>/users">
 						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Users
 					</a>
