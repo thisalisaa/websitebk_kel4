@@ -43,6 +43,11 @@
 					</a>
 				</li>
 				<li>
+					<a href="<?php echo URL; ?>/informasis">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Informasi
+					</a>
+				</li>
+				<li>
 					<a href="<?php echo URL; ?>/users">
 						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Users
 					</a>

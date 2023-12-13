@@ -4,7 +4,7 @@ namespace App\Models;
 
 use App\Core\Model;
 
-class Category extends Model
+class Informasi extends Model
 {
 
      public function show()
