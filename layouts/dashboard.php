@@ -33,8 +33,8 @@
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo URL; ?>/categories">
-						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Categories
+					<a href="<?php echo URL; ?>/datasiswas">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Data Siswa
 					</a>
 				</li>
 				<li>
@@ -45,6 +45,16 @@
 				<li>
 					<a href="<?php echo URL; ?>/posts">
 						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Post
+					</a>
+				</li>
+				<li>
+					<a href="<?php echo URL; ?>/informasis">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Informasi
+					</a>
+				</li>
+				<li>
+					<a href="<?php echo URL; ?>/ayahs">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Ayah
 					</a>
 				</li>
 				<li>
