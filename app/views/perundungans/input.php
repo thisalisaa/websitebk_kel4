@@ -19,6 +19,10 @@
             <td><input type="text" name="pelapor" required></td>
         </tr>
         <tr>
+            <td>TANGGAL KEJADIAN</td>
+            <td><input type="date" name="tanggal" required></td>
+        </tr>
+        <tr>
             <td></td>
             <td><input type="submit" name="btn_save" value="SAVE"></td>
         </tr>

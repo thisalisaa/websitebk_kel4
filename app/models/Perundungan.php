@@ -22,16 +22,18 @@ class Perundungan extends Model
             $kelas = $_POST['kelas'];
             $masalah = $_POST['masalah'];
             $pelapor = $_POST['pelapor'];
+            $tanggal = $_POST['tanggal'];
 
 
             $sql = "INSERT INTO tb_perundungan
-                SET nama=:nama, kelas=:kelas, masalah=:masalah, pelapor=:pelapor";
+                SET nama=:nama, kelas=:kelas, masalah=:masalah, pelapor=:pelapor, tanggal=:tanggal";
             $stmt = $this->db->prepare($sql);
 
             $stmt->bindParam(":nama", $nama);
             $stmt->bindParam(":kelas", $kelas);
             $stmt->bindParam(":masalah", $masalah);
             $stmt->bindParam(":pelapor", $pelapor);
+            $stmt->bindParam(":tanggal", $tanggal);
 
             $stmt->execute();
         }
@@ -53,10 +55,11 @@ class Perundungan extends Model
             $kelas = $_POST['kelas'];
             $masalah = $_POST['masalah'];
             $pelapor = $_POST['pelapor'];
+            $tanggal = $_POST['tanggal'];
             $id_pelapor = $_POST['id_pelapor'];
 
             $sql = "UPDATE tb_perundungan
-            SET nama=:nama, kelas=:kelas, masalah=:masalah, pelapor=:pelapor WHERE id_pelapor=:id_pelapor";
+            SET nama=:nama, kelas=:kelas, masalah=:masalah, pelapor=:pelapor, tanggal=:tanggal WHERE id_pelapor=:id_pelapor";
 
             $stmt = $this->db->prepare($sql);
 
@@ -64,6 +67,7 @@ class Perundungan extends Model
             $stmt->bindParam(":kelas", $kelas);
             $stmt->bindParam(":masalah", $masalah);
             $stmt->bindParam(":pelapor", $pelapor);
+            $stmt->bindParam(":tanggal", $tanggal);
             $stmt->bindParam(":id_pelapor", $id_pelapor);
 
             $stmt->execute();

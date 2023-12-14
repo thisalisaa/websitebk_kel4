@@ -20,6 +20,10 @@
             <td><input type="text" name="pelapor" value="<?php echo $data['row']['pelapor'];?>" required></td>
         </tr>
         <tr>
+            <td>TANGGAL KEJADIAN</td>
+            <td><input type="date" name="tanggal" value="<?php echo $data['row']['tanggal'];?>" required></td>
+        </tr>
+        <tr>
             <td></td>
             <td><input type="submit" name="btn_update" value="UPDATE"></td>
         </tr>
